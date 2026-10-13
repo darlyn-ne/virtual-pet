@@ -1,0 +1,56 @@
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  font-family: "Pixelify Sans";
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f1e8;
+}
+
+.pet-container {
+  position: relative;
+  display: inline-block;
+}
+
+.pet {
+  display: grid;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.pet>img {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#pet-message {
+  /* da aggiungere il ridimensionamento responsive */
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  padding: 10px;
+
+  background: white;
+  border-radius: 12px;
+  width: 250px;
+}
