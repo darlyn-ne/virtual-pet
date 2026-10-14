@@ -1,4 +1,4 @@
-const messages = {
+export const messages = {
   //////////////////////////////////////////////// spring
   spring: {
 
@@ -257,7 +257,7 @@ const messages = {
   }
 };
 
-function getRandomMessage(messagesArray) {
+export function getRandomMessage(messagesArray) {
 
   const randomIndex = Math.floor(
     Math.random() * messagesArray.length

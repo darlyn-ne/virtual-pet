@@ -40,3 +40,5 @@ const season = getSeason();
 
 console.log("Season:", season);
 console.log("Time:", timeOfDay);
+
+export { getTimeOfDay, getSeason };
