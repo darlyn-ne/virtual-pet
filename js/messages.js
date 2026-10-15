@@ -138,7 +138,7 @@ export const messages = {
       "Love you, my mate.",
       "Are you ready for a new day?",
       "Awoo!",
-      "Awoo! Mornings are finally getting chilly!",
+      "Awoo! Mornings are getting chilly!",
       "Let's tackle your to-do list together!",
       "Look outside, the leaves are changing colors!",
       "I love you, Pancake",
@@ -257,11 +257,34 @@ export const messages = {
   }
 };
 
-export function getRandomMessage(messagesArray) {
 
+import { getTimeOfDay, getSeason } from "./time.js";
+
+export function getRandomMessage(messagesArray) {
   const randomIndex = Math.floor(
     Math.random() * messagesArray.length
   );
 
   return messagesArray[randomIndex];
+}
+
+export function updateMessages() {
+  const petMessage = document.querySelector("#pet-message");
+
+  const season = getSeason();
+  const timeOfDay = getTimeOfDay();
+
+  const availableMessages = messages[season][timeOfDay];
+
+  petMessage.textContent = getRandomMessage(availableMessages);
+
+  console.log("Stagione:", season);
+  console.log("Fascia oraria:", timeOfDay);
+  console.log("Messaggio:", petMessage.textContent);
+}
+
+export function setupMessageTimer() {
+  updateMessages();
+
+  setInterval(updateMessages, 5 * 60 * 1000);
 }

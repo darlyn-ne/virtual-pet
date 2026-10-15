@@ -42,7 +42,7 @@ body {
 #pet-message {
   /* da aggiungere il ridimensionamento responsive */
   position: absolute;
-  top: 77%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
 
@@ -53,4 +53,76 @@ body {
   background: white;
   border-radius: 12px;
   width: 250px;
+}
+
+button {
+  font-family: "Pixelify Sans";
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  transform: scale();
+}
+
+button:hover {
+  scale: 120%;
+}
+
+button:active {
+  scale: 120%;
+}
+
+.custom-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.timer-container {
+  max-width: 700px;
+  margin: 10px 5px;
+  background: none;
+  padding: 10px;
+  border-radius: 12px;
+  border: 3.5px solid #855d5b;
+}
+
+h1 {
+  margin: auto;
+  font-size: 32px;
+  color: #855d5b;
+  text-align: center;
+
+}
+
+.timer {
+  text-align: center;
+  color: #855d5b;
+}
+
+.timer-value {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #50967f;
+}
+
+.duration-button {
+  color: #49685c;
+  width: 55px;
+}
+
+.start-button {
+  width: 60px;
+  background-color: rgb(136, 206, 173);
+  color: white;
+}
+
+.stop-button {
+  width: 60px;
+  background-color: rgb(226, 140, 140);
+  color: white;
 }

@@ -1,25 +1,23 @@
-import { getTimeOfDay, getSeason } from "./time.js";
-import { updateBackground } from "./backgrounds.js";
-import { updatePet } from "./pet.js";
-import { messages, getRandomMessage } from "./messages.js";
+import {
+  setBackground,
+  setupBackgroundButtons,
+  updateWindow
+} from "./backgrounds.js";
 
-updateBackground();
-updatePet();
+import {
+  updateAnimation,
+  setupPetButtons
+} from "./pet.js";
 
+import { setupMessageTimer } from "./messages.js";
 
-const petMessage = document.querySelector("#pet-message");
+setBackground();
+updateWindow();
+setupBackgroundButtons();
+
+updateAnimation();
+setupPetButtons();
+
+setupMessageTimer();
 
 console.log("Valko is ready!");
-
-function updatePetMessage() {
-
-  const season = getSeason();
-  const timeOfDay = getTimeOfDay();
-
-
-  const availableMessages = messages[season][timeOfDay];
-
-  petMessage.textContent = getRandomMessage(availableMessages);
-}
-
-updatePetMessage();

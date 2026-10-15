@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Little Koko</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
@@ -17,8 +18,11 @@
 
   <main class="pet-app">
 
-    <div id="custume-buttons">
-
+    <div id="bg-buttons" class="custom-buttons">
+      <button id="button-cafe" class="bg-button">Cafe</button>
+      <button id="button-home" class="bg-button">Home</button>
+      <button id="button-laboratory" class="bg-button">Lab</button>
+      <button id="button-forest" class="bg-button">Forest</button>
     </div>
 
     <div class="pet-container">
@@ -34,15 +38,43 @@
         Awooo!
       </div>
 
-      <div id="bg-buttons">
-
+      <div id="outfit-buttons" class="custom-buttons">
+        <button id="button-butler" class="outfit-button">Butler</button>
+        <button id="button-combat" class="outfit-button">Combat</button>
+        <button id="button-cozy" class="outfit-button">Cozy</button>
+        <button id="button-lab" class="outfit-button">Lab</button>
       </div>
-
     </div>
 
+    <div class="timer-container">
+
+      <div class="timer">
+
+        <h1>Pomodoro Timer</h1>
+
+
+        <div class="js-timer-value timer-value">00:00:00</div>
+
+        <div class="timer-duration-buttons">
+          <button onclick="setTimer(5);" class="duration-button">5 min</button>
+          <button onclick="setTimer(10);" class="duration-button">10 min</button>
+          <button onclick="setTimer(30);" class="duration-button">30 min</button>
+          <button onclick="setTimer(50);" class="duration-button">50 min</button>
+        </div>
+
+        <div class="timer-buttons">
+
+          <button onclick="startTimer();" class="start-button">Start</button>
+
+          <button onclick="stopTimer();" class="stop-button">Stop</button>
+
+        </div>
+      </div>
   </main>
 
+  <audio class="js-timer-sound" src="assets/audio/timer-fx.mp3"></audio>
   <script type="module" src="js/app.js"></script>
+  <script src="js/timer.js"></script>
 
 </body>
 
