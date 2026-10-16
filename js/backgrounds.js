@@ -1,9 +1,10 @@
 import { getTimeOfDay, getSeason } from "./time.js";
+import { playButtonSound } from "./sounds.js";
 
 const backgroundImage = document.querySelector("#background");
 const windowImage = document.querySelector("#window");
 
-let currentBackground = "cafe";
+let currentBackground = localStorage.getItem("presentBackground") || "cafe";
 
 export function setBackground() {
 
@@ -13,8 +14,8 @@ export function setBackground() {
   background.src =
     `assets/backgrounds/${currentBackground}/bg.png`;
 
-  console.log("Ambiente selezionato:", currentBackground);
-  console.log("Percorso immagine:", backgroundPath);
+  /*   console.log("Ambiente selezionato:", currentBackground);
+    console.log("Percorso immagine:", backgroundPath); */
 
 }
 
@@ -31,7 +32,11 @@ export function setupBackgroundButtons() {
 
     button.addEventListener("click", () => {
       currentBackground = backgroundName;
+
+      localStorage.setItem("presentBackground", currentBackground);
+
       setBackground();
+      playButtonSound();
     });
   }
 }
@@ -46,8 +51,8 @@ export function updateWindow() {
   window.src =
     `assets/backgrounds/window/${season}/${timeOfDay}.png`;
 
-  console.log("Stagione rilevata:", season);
-  console.log("Ora del giorno rilevata:", timeOfDay);
-  console.log("Percorso immagine finestra:", window.src);
+  /*   console.log("Stagione rilevata:", season);
+    console.log("Ora del giorno rilevata:", timeOfDay);
+    console.log("Percorso immagine finestra:", window.src); */
 
 }

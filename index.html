@@ -32,6 +32,10 @@
         <img id="background" class="scene-pet" src="assets\backgrounds\cafe\bg.png" alt="background">
         <img id="window" class="scene-pet" src="assets\backgrounds\window\spring\morning.png" alt="window">
         <img id="pet" class="scene-pet" src="assets\pet\butler\standing.gif" alt="little valko">
+
+        <div id="pet-clock" class="scene-info clock"></div>
+        <div id="pet-date" class="scene-info date"></div>
+
       </div>
 
       <div id="pet-message">
@@ -56,25 +60,23 @@
         <div class="js-timer-value timer-value">00:00:00</div>
 
         <div class="timer-duration-buttons">
-          <button onclick="setTimer(5);" class="duration-button">5 min</button>
-          <button onclick="setTimer(10);" class="duration-button">10 min</button>
-          <button onclick="setTimer(30);" class="duration-button">30 min</button>
-          <button onclick="setTimer(50);" class="duration-button">50 min</button>
+          <button id="button-5min" class="duration-button">5 min</button>
+          <button id="button-10min" class="duration-button">10 min</button>
+          <button id="button-25min" class="duration-button">25 min</button>
+          <button id="button-50min" class="duration-button">50 min</button>
         </div>
 
         <div class="timer-buttons">
-
-          <button onclick="startTimer();" class="start-button">Start</button>
-
-          <button onclick="stopTimer();" class="stop-button">Stop</button>
+          <button id="button-start" class="start-button">Start</button>
+          <button id="button-stop" class="stop-button">Stop</button>
 
         </div>
       </div>
   </main>
 
-  <audio class="js-timer-sound" src="assets/audio/timer-fx.mp3"></audio>
+  <audio class="js-timer-sound" src="assets/sounds/timer-fx.mp3"></audio>
   <script type="module" src="js/app.js"></script>
-  <script src="js/timer.js"></script>
+  <script type="module" src="js/timer.js"></script>
 
 </body>
 

@@ -38,7 +38,7 @@ function getTimeOfDay() {
 const timeOfDay = getTimeOfDay();
 const season = getSeason();
 
-console.log("Season:", season);
-console.log("Time:", timeOfDay);
+/* console.log("Season:", season);
+console.log("Time:", timeOfDay); */
 
 export { getTimeOfDay, getSeason };

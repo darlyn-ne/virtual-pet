@@ -40,7 +40,6 @@ body {
 }
 
 #pet-message {
-  /* da aggiungere il ridimensionamento responsive */
   position: absolute;
   top: 65%;
   left: 50%;
@@ -126,3 +125,29 @@ h1 {
   background-color: rgb(226, 140, 140);
   color: white;
 }
+
+
+/* .scene-info {
+  grid-area: 1 / 1;
+  align-self: end;
+  z-index: 10;
+
+  margin-bottom: -5%;
+  padding: 6px 20px;
+
+  font-size: 15px;
+  color: rgb(51, 39, 39);
+
+  pointer-events: none;
+
+}
+
+.clock {
+  justify-self: start;
+  margin-left: 4%;
+}
+
+.date {
+  justify-self: end;
+  margin-right: 4%;
+} */

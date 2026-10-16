@@ -11,6 +11,10 @@ import {
 
 import { setupMessageTimer } from "./messages.js";
 
+import { setupPetInteraction } from "./pet.js";
+
+/*import { startClock } from "./clock.js";*/
+
 setBackground();
 updateWindow();
 setupBackgroundButtons();
@@ -20,4 +24,8 @@ setupPetButtons();
 
 setupMessageTimer();
 
-console.log("Valko is ready!");
+setupPetInteraction();
+
+/* startClock(); */
+
+console.log("Valko is ready to howling for love!");

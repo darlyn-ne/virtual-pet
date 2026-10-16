@@ -278,9 +278,9 @@ export function updateMessages() {
 
   petMessage.textContent = getRandomMessage(availableMessages);
 
-  console.log("Stagione:", season);
-  console.log("Fascia oraria:", timeOfDay);
-  console.log("Messaggio:", petMessage.textContent);
+  /*   console.log("Stagione:", season);
+    console.log("Fascia oraria:", timeOfDay);
+    console.log("Messaggio:", petMessage.textContent); */
 }
 
 export function setupMessageTimer() {
