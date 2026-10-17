@@ -9,7 +9,9 @@ const animations = [
   "walking",
   "reading",
   "eating",
-  "sleeping"
+  "sleeping",
+  "interaction",
+  "interaction-night"
 ];
 
 
@@ -100,7 +102,7 @@ export function interactWithPet() {
   isInteracting = true;
 
   if (getTimeOfDay() === "night") {
-    currentAnimation = "night-interaction";
+    currentAnimation = "interaction-night";
   } else {
     currentAnimation = "interaction";
   }
