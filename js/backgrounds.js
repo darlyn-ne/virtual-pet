@@ -11,8 +11,7 @@ export function setBackground() {
   const backgroundPath =
     `assets/backgrounds/${currentBackground}/bg.png`;
 
-  background.src =
-    `assets/backgrounds/${currentBackground}/bg.png`;
+  background.src = backgroundPath;
 
   /*   console.log("Ambiente selezionato:", currentBackground);
     console.log("Percorso immagine:", backgroundPath); */
@@ -48,11 +47,11 @@ export function updateWindow() {
   const windowPath =
     `assets/backgrounds/window/${season}/${timeOfDay}.png`;
 
-  window.src =
-    `assets/backgrounds/window/${season}/${timeOfDay}.png`;
+  windowImage.src = windowPath;
 
-  console.log("Stagione rilevata:", season);
-  console.log("Ora del giorno rilevata:", timeOfDay);
-  console.log("Percorso immagine finestra:", window.src);
+  console.log("Stagione:", season);
+  console.log("Fascia oraria:", timeOfDay);
+  console.log("Percorso finestra:", windowPath);
+
 
 }
