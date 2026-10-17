@@ -26,9 +26,9 @@ export function updatePet() {
   petGif.src =
     `assets/pet/${currentSkin}/${currentAnimation}.gif`;
 
-  /*   console.log("Skin selezionata:", currentSkin);
-    console.log("Animazione selezionata:", currentAnimation);
-    console.log("Percorso Skin:", petPath);*/
+  console.log("Skin selezionata:", currentSkin);
+  console.log("Animazione selezionata:", currentAnimation);
+  console.log("Percorso Skin:", petPath);
 }
 
 export function updateAnimation() {

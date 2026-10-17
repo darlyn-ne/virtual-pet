@@ -51,8 +51,8 @@ export function updateWindow() {
   window.src =
     `assets/backgrounds/window/${season}/${timeOfDay}.png`;
 
-  /*   console.log("Stagione rilevata:", season);
-    console.log("Ora del giorno rilevata:", timeOfDay);
-    console.log("Percorso immagine finestra:", window.src); */
+  console.log("Stagione rilevata:", season);
+  console.log("Ora del giorno rilevata:", timeOfDay);
+  console.log("Percorso immagine finestra:", window.src);
 
 }
