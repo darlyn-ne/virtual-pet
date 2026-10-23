@@ -49,9 +49,9 @@ export function updateWindow() {
 
   windowImage.src = windowPath;
 
-  console.log("Stagione:", season);
+  /*console.log("Stagione:", season);
   console.log("Fascia oraria:", timeOfDay);
-  console.log("Percorso finestra:", windowPath);
+  console.log("Percorso finestra:", windowPath);*/
 
 
 }

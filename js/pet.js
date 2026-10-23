@@ -9,9 +9,7 @@ const animations = [
   "walking",
   "reading",
   "eating",
-  "sleeping",
-  "interaction",
-  "interaction-night"
+  "sleeping"
 ];
 
 
