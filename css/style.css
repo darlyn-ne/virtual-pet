@@ -47,7 +47,7 @@ body {
 
 #pet-message {
   position: absolute;
-  top: 65%;
+  top: 61%;
   left: 50%;
   transform: translateX(-50%);
 
@@ -66,7 +66,7 @@ button {
   padding: 5px;
   margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   background-color: white;
   transform: scale();
@@ -85,6 +85,13 @@ button:active {
   justify-content: center;
   margin: 10px;
 }
+
+.outfit-button,
+.bg-button {
+  border: 3px solid #855d5b
+}
+
+
 
 .timer-container {
   max-width: 700px;
