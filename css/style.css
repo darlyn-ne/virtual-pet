@@ -69,15 +69,6 @@ button {
   border-radius: 8px;
   cursor: pointer;
   background-color: white;
-  transform: scale();
-}
-
-button:hover {
-  scale: 120%;
-}
-
-button:active {
-  scale: 120%;
 }
 
 .custom-buttons {
@@ -91,6 +82,11 @@ button:active {
   border: 3px solid #855d5b
 }
 
+.outfit-button:hover,
+.bg-button:hover,
+.duration-button:hover {
+  transform: translateY(-5px);
+}
 
 
 .timer-container {
@@ -127,18 +123,21 @@ h1 {
   width: 55px;
 }
 
-.start-button {
+#button-start {
   width: 60px;
   background-color: rgb(136, 206, 173);
   color: white;
 }
 
-.stop-button {
+#button-stop {
   width: 60px;
   background-color: rgb(226, 140, 140);
   color: white;
 }
 
+.start-stop-button:hover {
+  scale: 120%;
+}
 
 /* .scene-info {
   grid-area: 1 / 1;
