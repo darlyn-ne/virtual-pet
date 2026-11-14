@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -54,22 +57,24 @@
 
       <div class="timer">
 
-        <h1>Pomodoro Timer</h1>
+        <h1>Pomo Timer</h1>
 
+        <div class="timer-sub-container">
 
-        <div class="js-timer-value timer-value">00:00:00</div>
+          <div class="js-timer-value timer-value">00:00:00</div>
 
-        <div class="timer-duration-buttons">
-          <button id="button-5min" class="duration-button">5 min</button>
-          <button id="button-10min" class="duration-button">10 min</button>
-          <button id="button-25min" class="duration-button">25 min</button>
-          <button id="button-50min" class="duration-button">50 min</button>
-        </div>
+          <div class="timer-duration-buttons">
+            <button id="button-5min" class="duration-button"><span class="duration-numbers">5</span> min</button>
+            <button id="button-10min" class="duration-button"><span class="duration-numbers">10</span> min</button>
+            <button id="button-25min" class="duration-button"><span class="duration-numbers">25</span> min</button>
+            <button id="button-50min" class="duration-button"><span class="duration-numbers">50</span> min</button>
+          </div>
 
-        <div class="timer-buttons">
-          <button id="button-start" class="start-stop-button">Start</button>
-          <button id="button-stop" class="start-stop-button">Stop</button>
+          <div class="timer-buttons">
+            <button id="button-start" class="start-stop-button">Start</button>
+            <button id="button-stop" class="start-stop-button">Stop</button>
 
+          </div>
         </div>
       </div>
   </main>
