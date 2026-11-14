@@ -53,5 +53,28 @@ export function updateWindow() {
   console.log("Fascia oraria:", timeOfDay);
   console.log("Percorso finestra:", windowPath);*/
 
+}
 
+export function updateWindowOnTimeChange() {
+  let timeOfDay = getTimeOfDay();
+  let season = getSeason();
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      updateWindow();
+    }
+  });
+
+  updateWindow();
+
+  window.setInterval(() => {
+    const nextTimeOfDay = getTimeOfDay();
+    const nextSeason = getSeason();
+
+    if (nextTimeOfDay !== timeOfDay || nextSeason !== season) {
+      timeOfDay = nextTimeOfDay;
+      season = nextSeason;
+      updateWindow();
+    }
+  }, 60_000);
 }

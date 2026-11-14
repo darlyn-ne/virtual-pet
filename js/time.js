@@ -35,10 +35,10 @@ function getTimeOfDay() {
   return "night";
 }
 
-const timeOfDay = getTimeOfDay();
+/*const timeOfDay = getTimeOfDay();
 const season = getSeason();
 
 console.log("Season:", season);
-console.log("Time:", timeOfDay);
+console.log("Time:", timeOfDay);*/
 
 export { getTimeOfDay, getSeason };

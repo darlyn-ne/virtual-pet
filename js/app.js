@@ -1,7 +1,7 @@
 import {
   setBackground,
   setupBackgroundButtons,
-  updateWindow
+  updateWindowOnTimeChange
 } from "./backgrounds.js";
 
 import {
@@ -16,7 +16,7 @@ import { setupPetInteraction } from "./pet.js";
 /*import { startClock } from "./clock.js";*/
 
 setBackground();
-updateWindow();
+updateWindowOnTimeChange();
 setupBackgroundButtons();
 
 updateAnimation();
@@ -28,4 +28,4 @@ setupPetInteraction();
 
 /* startClock(); */
 
-console.log("Valko is ready to howling for love!");
+console.log("Valko is ready to howl for love!");
